@@ -1,7 +1,14 @@
-.container{
+.logo {
+   height: 40px;
+   width: 40px;
+   padding: 4px;
+}
+
+.container {
     width: 640px;
+    height: 640px;
     margin: auto;
-    margin-top: 150px;
+     /* margin-top: 150px; */
     background: #fff;
     color: #262626;
     display: flex;
@@ -11,37 +18,98 @@
     padding: 40px 50px;
 }
 
-.container hr{
+.container hr {
     height: 2px;
     border: none;
     background: #707070;
- }
+}
 
- .container h2{
+.container h2 {
     font-size: 27px;
     font-weight: 500;
- }
+}
 
- .container ul li{
+.container ul li {
     display: flex;
     align-items: center;
     height: 70px;
     padding-left: 15px;
     border: 1px solid #686868;
     border-radius: 8px;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
     font-size: 20px;
     cursor: pointer;
- }
+}
 
- .container button{
+.container button {
     margin: auto;
     width: 250px;
     height: 65px;
-    background: #553f9a;
+    background: #050D8a;
     color: #fff;
     font-size: 25px;
     font-weight: 500;
     border-radius: 8px;
     cursor: pointer;
- }
+}
+
+.container .index {
+    margin: auto;
+    font-size: 18px;
+}
+
+.container .correct {
+    background: #dffff2;
+    border-color: #00d397;
+}
+
+.container .wrong {
+    background: #FFEBEB;
+    border-color: #FF4A4A;
+}
+
+/* Adjustments for screens smaller than 768px */
+@media (max-width: 768px) {
+    .container {
+        width: 90%; /* Adjust width for smaller screens */
+        padding: 20px; /* Adjust padding for smaller screens */
+    }
+    
+    .container ul li {
+        font-size: 18px; /* Adjust font size for smaller screens */
+    }
+    
+    .container button {
+        width: 200px; /* Adjust button width for smaller screens */
+        height: 55px; /* Adjust button height for smaller screens */
+        font-size: 22px; /* Adjust button font size for smaller screens */
+    }
+}
+
+/* Further adjustments for screens smaller than 480px */
+@media (max-width: 480px) {
+    .container {
+        width: 95%; /* Adjust width for very small screens */
+        padding: 15px; /* Adjust padding for very small screens */
+    }
+    
+    .container h2 {
+        font-size: 24px; /* Adjust heading font size for very small screens */
+    }
+    
+    .container ul li {
+        height: 60px; /* Adjust list item height for very small screens */
+        font-size: 16px; /* Adjust font size for very small screens */
+        padding-left: 10px; /* Adjust padding for very small screens */
+    }
+    
+    .container button {
+        width: 180px; /* Adjust button width for very small screens */
+        height: 50px; /* Adjust button height for very small screens */
+        font-size: 20px; /* Adjust button font size for very small screens */
+    }
+    
+    .container .index {
+        font-size: 16px; /* Adjust index font size for very small screens */
+    }
+}
